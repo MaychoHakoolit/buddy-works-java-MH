@@ -1,13 +1,18 @@
-# Buddy Lambda Example
+מטרת הדוגמה היא להמחיש כיצד ניתן:
+	•	לארוז פרויקט Java בפורמט המתאים לשימוש ב-AWS Lambda.
+	•	לבצע אינטגרציה עם תהליך CI/CD ב-Buddy.
+	•	לפרוס את הפונקציה לסביבת ענן בצורה אוטומטית, מהירה ואמינה.
 
-This is an example to couple with an article I'm writing for [buddy](https://buddy.works).
+מה זה AWS Lambda?
 
-## Packaging
+AWS Lambda הוא שירות מבית Amazon Web Services המאפשר להריץ קוד בענן ללא צורך בניהול שרתים. במקום להקים תשתיות, מגדירים את הקוד הרצוי והמערכת מריצה אותו אוטומטית כתגובה לאירועים.
 
-It's a maven app, so you know what to do.
+שימושים נפוצים:
+	•	תגובה לאירועים משירותים אחרים (כגון S3, API Gateway, DynamoDB).
+	•	בניית מערכות מבוססות אירועים.
+	•	ביצוע משימות רקע.
+	•	שירותים קטנים או זמניים (מיקרו-שירותים).
 
-```
-mvn clean package
-```
+בנייה ואריזה
 
-This will create a jar named `target/buddy.jar`. This is a functioning Java Lambda. 
+הפרויקט משתמש ב-Maven לניהול התלויות ולתהליך האריזה. 
